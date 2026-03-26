@@ -1,0 +1,17 @@
+# --- Trae & IDE Specific ---
+.trae/
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+# --- Web Development ---
+node_modules/
+dist/
+build/
+.env
+
+# --- Temporary Files ---
+*.tmp
+*.temp
