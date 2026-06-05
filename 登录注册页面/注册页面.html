@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册页面</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <div class="register">
+    <div class="up">
+      <div class="up-1">
+        <h3>欢迎注册</h3>
+      </div>
+      <div class="up-2">
+        <small>请输入您的账号信息</small>
+      </div>
+    </div>
+    <form action="https://httpbin.org/post" method="POST">
+      <div class="mid">
+        <div class="mid-1 w">
+          <small>用户名</small> <br>
+          <input type="text" name="username" placeholder="请输入用户名">
+        </div>
+        <div class="mid-1 mid-2 w">
+          <small>邮箱</small> <br>
+          <input type="email" name="email" placeholder="请输入邮箱">
+        </div>
+        <div class="mid-1 w city">
+          <small>所在城市</small>
+          <select name="city" placeholder="请选择所在城市">
+            <option value="香港">香港</option>
+            <option value="北京">北京</option>
+            <option value="上海">上海</option>
+            <option value="广州">广州</option>
+            <option value="深圳">深圳</option>
+            <option value="成都">成都</option>
+            <option value="台湾">台湾</option>
+            <option value="澳门">澳门</option>
+          </select>
+        </div>
+        <div class="w selgender">
+          <small>性别</small> <br>
+          <div class="selgender-2">
+            <label><input type="radio" name="gender" value="male"> 男</label>
+            <label><input type="radio" name="gender" value="female"> 女</label>
+            <label><input type="radio" name="gender" value="other"> 其他</label>
+          </div>
+
+        </div>
+        <div class="w mid-1">
+          <small>兴趣爱好</small>
+          <div class="selgender-2 hobby-group">
+            <label><input type="checkbox" name="hobby" value="sports">阅读</label>
+            <label><input type="checkbox" name="hobby" value="music">音乐</label>
+            <label><input type="checkbox" name="hobby" value="movie">运动</label>
+            <label><input type="checkbox" name="hobby" value="travel">旅行</label>
+            <label><input type="checkbox" name="hobby" value="cooking">烹饪</label>
+            <label><input type="checkbox" name="hobby" value="photography">摄影</label>
+          </div>
+        </div>
+        <div class="w mid-1 password">
+          <small>密码</small> <br>
+          <input type="password" name="password" placeholder="请输入密码">
+        </div>
+        <div class="w mid-1 confirm-password">
+          <small>确认密码</small> <br>
+          <input type="password" name="confirm_password" placeholder="请确认密码">
+        </div>
+      </div>
+      <div class="w button">
+        <button type="submit">注册</button>
+      </div>
+    </form>
+    <div class="w foot">
+      <small>已经有账号? <a href="./登录页面.html">立即登录</a></small>
+    </div>
+
+  </div>
+</body>
+
+</html>
